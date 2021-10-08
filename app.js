@@ -17,7 +17,7 @@ const userRouter = require('./src/routes/userRoutes')(nav);
 
 app.use(express.static('./public'));
 app.set('view engine','ejs');
-app.set('views','C:/Users/hp/OneDrive/Documents/aryaslib/src/views');
+app.set('views','./src/views');
 app.use('/books',booksRouter);
 app.use('/authors',authorsRouter);
 app.use('/register',formRouter);
